@@ -219,10 +219,15 @@
   overflow: hidden;
   border: 1px solid color-mix(in oklab, var(--primary) 28%, transparent);
   border-radius: 999px;
-  font-size: 2.35rem;
-  font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
   line-height: 1;
   box-shadow: inset 0 -7px 0 oklch(0.3 0.12 260 / 0.08);
+}
+
+.avatar-person {
+  width: 72%;
+  height: 72%;
+  color: oklch(0.22 0.11 263);
+  fill: oklch(0.96 0.025 73 / 0.82);
 }
 
 .medal {
