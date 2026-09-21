@@ -74,12 +74,8 @@ function Leaderboard() {
         </header>
 
         <div className="space-y-4 p-3 sm:p-6">
-          <section className="rewards-panel grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 rounded-lg px-4 py-4 sm:grid-cols-[240px_repeat(3,1fr)] sm:gap-4">
-            <div className="flex min-w-0 items-center gap-3">
-              <Gift className="size-11 shrink-0 text-primary sm:size-14" strokeWidth={2.5} />
-              <h2 className="text-xl font-extrabold leading-tight text-primary sm:text-2xl">Leaderboard<br />Rewards</h2>
-            </div>
-            <div className="col-span-2 grid grid-cols-3 gap-2 sm:col-span-3 sm:col-start-2 sm:row-start-1">
+          <section className="rewards-panel rounded-lg px-4 py-4 sm:px-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
               {rewards.map((reward) => (
                 <div key={reward.rank} className={`${reward.tone} flex min-w-0 items-center justify-center gap-2 rounded-lg border px-2 py-2.5`}>
                   <Medal rank={reward.rank} compact />
