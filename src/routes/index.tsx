@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowLeft, CalendarDays, Clock3, Gift, Star } from "lucide-react";
+import { ArrowLeft, CalendarDays, Clock3, Gift, Star, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
@@ -65,7 +65,12 @@ function Leaderboard() {
               <p className="text-[15px] font-semibold text-header-muted sm:text-lg">Ku tartan, kasbo dhibco, hel abaalmarin!</p>
             </div>
           </div>
-          <div className="trophy" aria-hidden="true">🏆</div>
+          <div className="trophy" aria-hidden="true">
+            <span className="trophy-ray trophy-ray-left" />
+            <Trophy strokeWidth={2.6} />
+            <Star className="trophy-star" fill="currentColor" />
+            <span className="trophy-ray trophy-ray-right" />
+          </div>
         </header>
 
         <div className="space-y-4 p-3 sm:p-6">
