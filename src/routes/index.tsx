@@ -119,7 +119,7 @@ function Leaderboard() {
                 {player.rank <= 3 && (
                   <div className={`reward-chip chip-${player.rank} col-span-4 mt-1 flex items-center justify-center gap-2 rounded-md border py-1.5 sm:absolute sm:right-4 sm:col-span-1 sm:mt-0 sm:w-[118px]`}>
                     <Gift className="size-5" strokeWidth={2.5} />
-                    <span className="text-sm font-black">{rewards[player.rank - 1].discount} Reward</span>
+                    <span className="text-sm font-black">{rewards[player.rank - 1]?.discount} Reward</span>
                   </div>
                 )}
               </li>
